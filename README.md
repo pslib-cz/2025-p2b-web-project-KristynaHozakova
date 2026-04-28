@@ -6,3 +6,6 @@ Téma: webové stránky pro kavárnu a pražírnu kávy
 odkaz na plátno ve figmě:
 https://www.figma.com/site/r6hPmXGKEnINAqzz9mQXoO/Untitled?node-id=0-1&p=f&t=g7cwtm8D5UBiZCJi-0
 pouze velice ilustrační, výsledek bude trochu jiný (neumím moc dobře ve figmě)
+
+odkaz na github pages:
+https://pslib-cz.github.io/2025-p2b-web-project-KristynaHozakova/
