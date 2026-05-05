@@ -51,17 +51,11 @@ nav .active {
 .hero {
   width: 100%;
   height: 420px;
-  overflow: hidden;
+  background-image: url("./images/interier_kavarny_orizle.jpg");
+  background-size: cover;
+  background-position: center 25%;
+  background-repeat: no-repeat;
 }
-
-.hero img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-
-
 
 /* TITLE */
 
@@ -122,6 +116,33 @@ nav .active {
   }
 }
 
+/* CONTACTS */
+.contacts {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  max-width: 1100px;
+  margin: 80px auto 120px auto;
+  padding: 0 20px;
+}
+
+.contact-box {
+  flex: 1;
+  max-width: 300px;
+}
+
+.contact-box h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: var(--secondary-color);
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+.contact-box p {
+  font-size: 18px;
+  color: var(--text-color);
+}
 
 /* ABOUT */
 
@@ -197,7 +218,7 @@ footer {
 }
 
 /* HOVER */
-.footer-links :hover {
+.footer-links a:hover {
   color: var(--text-color-white);
   transition: 0.2s ease;
   opacity: 1;
@@ -222,6 +243,11 @@ nav ul li a:hover {
 
   .hero {
     height: 260px;
+  }
+
+  .contacts {
+  flex-direction: column;
+  gap: 30px;
   }
 
   .about {
