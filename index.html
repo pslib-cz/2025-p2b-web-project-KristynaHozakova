@@ -7,6 +7,8 @@
     <title>Kavárna a pražírna</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" type="image/png" href="./images/logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -49,6 +51,38 @@
         </p>
     </section>
 
+    <!-- GALLERY SLIDER -->
+    <section class="gallery-section">
+        <div class="swiper gallery-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./images/galerie_1.jpeg" alt="Kavárna 1">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="./images/galerie_2.jpeg" alt="Kavárna 2">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="./images/galerie_3.jpg" alt="Kavárna 3">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="./images/galerie_4.jpeg" alt="Kavárna 4">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="./images/galerie_5.jpg" alt="Kavárna 5">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="./images/galerie_6.jpg" alt="Kavárna 6">
+                </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+
     <footer>
         <div class="footer-main">
             <div class="footer-left">
@@ -69,6 +103,44 @@
             <a href="https://x.com/"><img src="./images/x.svg" alt="X (dříve Twitter)"></a>
         </div>
     </footer>
+
+
+
+    <script>
+        window.addEventListener("load", () => {
+
+            new Swiper(".gallery-slider", {
+
+                slidesPerView: 1,
+                spaceBetween: 20,
+
+                scrollbar: {
+                    el: ".swiper-scrollbar",
+                    draggable: true,
+                },
+
+                breakpoints: {
+
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 20
+                    },
+
+                    1024: {
+                        slidesPerView: 3,
+                        grid: {
+                            rows: 2,
+                            fill: "row"
+                        },
+                        spaceBetween: 25
+                    }
+
+                }
+
+            });
+
+        });
+    </script>
 </body>
 
 </html>

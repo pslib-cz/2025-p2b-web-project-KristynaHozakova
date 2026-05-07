@@ -247,6 +247,65 @@ nav .active {
   line-height: 1.8;
 }
 
+/* GALLERY */
+
+.gallery-section {
+  max-width: 1200px;
+  margin: 0 auto 120px;
+  padding: 0 20px;
+}
+
+.gallery-slider {
+  width: 100%;
+}
+
+.gallery-slider .swiper-wrapper {
+  margin-bottom: 35px; /* místo pro scrollbar */
+  align-items: stretch;
+}
+
+.gallery-slider .swiper-slide {
+  border-radius: 18px;
+  overflow: hidden;
+  height: auto !important;
+}
+
+.gallery-slider img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+  border-radius: 18px;
+}
+
+/* SCROLLBAR */
+
+.gallery-slider .swiper-scrollbar {
+  position: relative !important;
+  margin-top: 20px;
+
+  width: 100% !important;
+  height: 6px !important;
+
+  background: #ddd;
+  border-radius: 999px;
+}
+
+.gallery-slider .swiper-scrollbar-drag {
+  background: var(--primary-color);
+  border-radius: 999px;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .gallery-slider img {
+    height: 280px;
+  }
+
+}
+
 /* FOOTER */
 footer {
   display: flex;
