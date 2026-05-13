@@ -589,6 +589,8 @@ nav .active {
 
 .product-card {
   padding: 30px;
+  display: flex;
+  flex-direction: column;
 
   background: #ffffff;
   border: 1px solid var(--border-color);
@@ -629,6 +631,7 @@ nav .active {
 
 .product-card a {
   color: var(--secondary-color);
+  margin-top: auto;
 
   text-decoration: none;
   font-size: 15px;
@@ -927,5 +930,16 @@ footer {
   .footer-links,
   .footer-social {
     gap: 12px;
+  }
+
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1024px) {
+  .products {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
